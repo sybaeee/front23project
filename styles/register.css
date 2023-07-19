@@ -1,0 +1,93 @@
+.wrapper{
+  min-height: 100vh;
+  background-image:linear-gradient(rgba(0,0,0,0.7) , rgba(0,0,0,0.7)), url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#register-form{
+  display: flex;
+  flex-direction: column;
+  width: 385px;
+}
+
+.form-header{
+  text-align: center;
+}
+
+.input-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+input{
+  height: 64px;
+  box-sizing: border-box;
+  padding: 20px 16px;
+  border-radius: 16px;
+  background-color: rgba(256, 256, 256, 0.05);
+  border: 1px solid white;
+  color: white;
+}
+
+.err-msg{
+  color: red;
+  padding: 0 16px;
+  font-size: 14px;
+  display: none;
+}
+
+button{
+  height: 64px;
+  border-radius: 16px;
+  border: none;
+  background-color: #9b51e0;
+}
+
+.modal-wrapper{
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(256, 256, 256, 0.5);
+  backdrop-filter: blur(5px);
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal{
+  width: 450px;
+  border-radius: 16px;
+  padding: 20px;
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.modal > .cancel-icon{
+  width: 24px;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.modal > .logo{
+  height: 60px;
+}
+
+.modal > p{
+  color: black;
+  text-align: center;
+  font-weight: bold;
+}
